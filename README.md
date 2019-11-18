@@ -1,2 +1,2 @@
 # UitdagendeOpdrachten
-De uitdagende opdracht van vrijdag
+De uitdagende opdrachen op de vrijdagen
