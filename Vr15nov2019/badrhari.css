@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+}
+h1{
+    margin-top: 0;
+}
+.header{
+    background-image: url(694-83-694x422.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 35rem;
+    width: 100%;
+}
+
+.navbar__menu{
+    margin: 0;
+    padding: 2rem;
+    list-style-type: none;
+    font-size: 2rem;
+    color: darkred;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.navbar__menu__icon:hover ~ .navbar__menu-item {
+    opacity: 1;
+}
+.navbar__menu-item {
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* --------------Later op terug komen! */
+.stats{
+    background-image: url(red11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 30rem;
+}
+
+.stats__title{
+    text-align: center;
+    font-size: 2rem;
+    color: darkred;
+}
+.stats-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+.stats-box {
+    width: 300px;
+    height: 200px;
+  }
+  
+.stats-box-inner {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .stats-box:hover .stats-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .stats-box-front, .stats-box-back {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    backface-visibility: hidden;
+  }
+  
+  .stats-box-back {
+    transform: rotateY(180deg);
+  }
+  
+  img{
+      width: 300px;
+      height: 300px;
+  }
+    
+  .stats-box-back__title{
+      position: absolute;
+      color: red;
+  }
+
+ .pics{
+    background-image: url(694-83-694x422.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+ }
+
+ .pics__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 25rem;
+ }
+
+ .video{
+     background-image: url(red22.jpg);
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+ }
+
+ .video-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     height: 30rem;
+ }
+
+ .rotate{
+     background-image: url(694-83-694x422.jpeg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+ }
+
+ .rotate::before{
+    content: "";
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+ }
+
+ .rotate-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     height: 25rem;
+ }
+
+ .rotate-container__img1:hover{
+    -webkit-animation: rotation 0.7s infinite ease-in-out;
+ }
+
+ @-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+.rotate-container__img2{
+    height: 20rem;
+    width: 20rem;
+    transition: all 1s ease-in-out;
+}
+
+.rotate-container__img2:hover{
+    transform: scale(1.5);
+}
+
+.rotate-container__img3:hover{
+    -webkit-animation: rotation 0.4s infinite ease-in-out;
+ }
+
+ @-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
