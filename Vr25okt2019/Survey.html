@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oussama en Rinaldo opdracht</title>
+    <link rel="stylesheet" type="text/css" href="Survey.css">
+</head>
+
+<body>
+    <div>
+        <video autoplay muted loop id="backgroundvideo">
+            <source src="/Video/raindrops.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="title">
+        <h1>Techgrounds</h1>
+        <h2>Extra opdracht: Survey Form</h2>
+        <h3>Vrijdag 25-10-2019</h3>
+    </div>  
+    
+    <div class="form">
+        <form>
+                <h4>Naam</h4>
+                <input class="inputs" type="text" name="What is your name?" value="What is your name?">
+
+                <h4>E-mail</h4>
+                <input class="inputs" type="email" name="email" value="Please enter your current adress">
+
+                <h4>Age (optional)</h4>
+                <input class="inputs" type="date" name="Please enter your age" value="Please enter your age">
+
+                <h4>What is your current employment status?</h4>
+                <p>(click or tap on it to close)</p>
+                <select class="inputs" name="dropdown">
+                    <option value="choose" selected>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="working">Working</option>
+                    <option value="unemployed" >Unemployed</option>
+                </select>
+
+                <h4>Would you recommend Techgrounds to a friend?</h4>
+                <input type="radio" name="choose" value="sure">For sure!<br>
+                <input type="radio" name="choose" value="Maybe">Mabye<br>
+                <input type="radio" name="choose" value="No">No<br>
+
+                <input class="inputs" type="text" name="other" value="Other: Please tell us what's on your mind...">
+
+                <h4>What interests you the most?</h4>
+                <p>(click or tap on it to close)</p>
+                <select class="inputs "name="dropdown2">
+                <option value="select" selected>Select an option</option>
+                <option value="Society">Society</option>
+                <option value="Health">Health</option>
+                <option value="History">History</option>
+                </select>
+
+                <h4>Which of the following needs improvements?</h4>
+                <p>(Check all that apply)</p>
+                <input type="checkbox" value="guidance">Personal guidance<br>
+                <input type="checkbox" value="homework">Homework<br>
+                <input type="checkbox" value="Challenges">Challenges<br>
+                <input type="checkbox" value="codewebbies">A codewebbies WIKI!<br>
+                <input type="checkbox" value="improvement">No improvement needed<br>
+                <input class="inputs" type="text" name="other" value="Other: Please tell us what's on your mind">
+                <br>
+
+                <input class="button" type="submit" value="submit">
+
+            </form>
+    </div>
+</body>
+
+</html>

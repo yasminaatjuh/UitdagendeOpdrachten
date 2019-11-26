@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linda en Roosybel</title>
+    <style>
+        body {
+            margin-left: 90px;
+            background-image: url("/media/fish.gif");
+            /* background: lineair-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.5),
+            url("media/fish.gif"); */
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 10px;
+            background-position: contain;
+
+        }
+
+        .navbar {
+            list-style-type: none;
+            height: 100%;
+            width: 90px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-image: url("media/star.gif");
+            overflow: hidden;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+        }
+
+        /* .content::after{
+            content: "";
+            background-image: url("media/fish.gif");
+            position: absolute;
+            background-size: 100%;
+            background-repeat: cover;
+            height: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 11.6%;
+            z-index: -1;
+            opacity: 0.5; 
+            
+
+        }*/
+
+
+        .images {
+            background-color: white;
+            overflow: scroll;
+            display: flex;
+            width: 95%;
+            flex-wrap: nowrap;
+            padding: 1%;
+        }
+
+        .images img {
+            width: 300px;
+            height: 200px;
+            padding-left: 5%;
+        }
+
+        .dog {
+            color: white;
+        }
+
+        .dog img {
+            width: 100%;
+        }
+
+        img:hover {
+            transform: scaleX(-1);
+        }
+
+        .forum {
+            background-color: rgba(255, 255, 255, 0.5);
+            position: relative;
+            bottom: 0;
+            top: 0;
+            padding: 2%;
+        }
+
+        .formbox {
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            width: 90%;
+            color: grey;
+        }
+
+        .opmerkingen {
+            border-radius: 20px;
+            width: 90%;
+        }
+
+        @media screen and (max-width: 700px) {
+            .navbar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .navbar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="home.asp">Home</a>
+        <a href="Cats.asp">Cats</a>
+        <a href="Dogs">Dogs</a>
+        <a href="Contact.asp">Contact</a>
+    </div>
+
+    <audio controls>
+        <source src="/media/11.mp3" type="audio/mp3">
+    </audio>
+    <div class="content">
+        <h1>Welcome to the rice fields</h1>
+        <p>In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. het heeft
+            zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 jaar oud.
+            Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één van de meer
+            obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken
+            naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de secties
+            1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" (De uitersten van goed en kwaad) door Cicero,
+            geschreven in 45 v.Chr. Dit boek is een verhandeling over de theorie der ethiek, erg populair tijdens de
+            renaissance. De eerste regel van Lorem Ipsum, "Lorem ipsum dolor sit amet..", komt uit een zin in sectie
+            1.10.32.
+        </p>
+    </div>
+
+    <div class="images">
+        <div class="image1">
+            <h3>Max</h3>
+            <p>Sale with a side pussy</p>
+            <img src="/media/max.jpg">
+        </div>
+        <div class="image2">
+            <h3>Bob</h3>
+            <p>Sale with a side pussy</p>
+            <img src="/media/glow.png">
+        </div>
+        <div class="image3">
+            <h3>Kiwi</h3>
+            <p>Sale with a side pussy</p>
+            <img src="/media/floof.jpg">
+        </div>
+        <div class="image4">
+            <h3>Lemon</h3>
+            <p>Sale with a side pussy</p>
+            <img src="/media/durr.jpg">
+        </div>
+        <div class="image5">
+            <h3>Falafel</h3>
+            <p>Sale with a side pussy</p>
+            <img src="/media/raa.png">
+        </div>
+    </div>
+
+    <div class="dog">
+        <h1>Doggo</h1>
+        <img src="/media/dog.jpg">
+    </div>
+
+    <div class="forum">
+        <h1>Contact Form</h1>
+        <form>
+            First Name:<br>
+            <input type="text" name="Firstname" value="Firstname" class="formbox"><br><br>
+            Last Name:<br>
+            <input type="text" name="Lastname" value="Lastname" class="formbox"><br><br>
+            Email:<br>
+            <input type="email" name="email" class="formbox"><br><br>
+            Country:<br>
+            <select name="country" id="id" class="formbox"><br><br>
+                <option value="USA">Usa</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="France">France</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Morocco">Morocco</option>
+            </select><br><br>
+            Subject<br>
+            <input type="text" name="write" class="opmerkingen">
+        </form><br><br>
+        <button>Submit</button>
+    </div>
+
+</body>
+
+</html>
